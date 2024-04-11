@@ -1,5 +1,5 @@
-
-rts = class Square extends require('./5-square') {
+#!/usr/bin/node
+module.exports = class Square extends require('./5-square') {
   charPrint (c) {
     const arr = [];
     for (let index = 0; index < this.height; index++) {

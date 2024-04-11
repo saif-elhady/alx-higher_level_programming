@@ -7,7 +7,7 @@ module.exports = class Rectangle {
     }
   }
 
-  print() {
+  print () {
     const array = [];
     for (let index = 0; index < this.width; index++) {
       array.push('X');
@@ -16,13 +16,15 @@ module.exports = class Rectangle {
       console.log(array.join(''));
     }
   }
-  rotate() {
+
+  rotate () {
     let temp = 0;
     temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
-  double() {
+
+  double () {
     this.width = this.width * 2;
     this.height = this.height * 2;
   }
